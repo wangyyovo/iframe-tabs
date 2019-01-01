@@ -50,6 +50,7 @@
                 ml = Math.min(0, ml);
                 mm.css('left', ml);
             }
+ 
         }
     },
     //打开选项卡 链接、含图标的标题，false不显示关闭按钮(可选)
@@ -58,18 +59,22 @@
         mmc.removeClass('active');
         mb.children().removeClass('active');
         mb.find('iframe').each(function () {
-            var shorturl = (this.src.split(location.host)[1] || "").toLowerCase();
-            shorturl = shorturl.split('?')[0];
-            if (shorturl != "" && url.toLowerCase().indexOf(shorturl) > -1) {
+            //var shorturl = (this.src.split(location.host)[1] || "").toLowerCase();
+            //shorturl = shorturl.split('?')[0];
+
+            //if (shorturl != "" && url.toLowerCase().indexOf(shorturl) > -1) {
+            if($(this).data('id') == url){
                 //取消注释，点击导航会刷新页面
                 //this.src = url;
                 var pageid = $(this).parent().addClass('active')[0].id;
                 mmc.each(function () {
                     if (this.hash == "#" + pageid) {
                         $(this).addClass('active');
+                        
                         return false;
                     }
                 });
+                
                 isopen = true;
                 return false;
             }
@@ -77,7 +82,7 @@
         if (!isopen) {
             var pageid = "page_" + new Date().valueOf(), close = close == false ? '' : '<em class="fa fa-close"></em>';
             mmc.end().append('<a href="#' + pageid + '" class="active">' + title + close + '</a></li>');
-            mb.append('<div class="tab-pane active" id="' + pageid + '"><iframe frameborder="0" src="about:blank"></iframe></div>');
+            mb.append('<div class="tab-pane active" id="' + pageid + '"><iframe frameborder="0" src="about:blank" data-id="' + url + '"></iframe></div>');
             $('#' + pageid).find('iframe')[0].src = url;
         }
 
