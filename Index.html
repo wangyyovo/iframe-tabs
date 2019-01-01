@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html style="overflow:hidden; padding:0;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>tabs</title>
+</head>
+
+<body class="no-skin">
+
+<style type="text/css">
+
+
+.btn-group button {
+    line-height:38px;
+
+                        outline: none;
+                        white-space: nowrap;
+                        background-color: #fff;
+                        border: none !important;
+                    }
+</style>
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--首页样式-->
+    <link href="css/tab.css" rel="stylesheet" />
+
+    <!--主-->
+    <div class="main-container" id="main-container">
+
+        <!--主体-->
+        <div class="main-content">
+            <!--选项卡·标签-->
+            <div class="hidden-xs mtab" id="mtab">
+                <!--左滑-->
+                <a href="javascript:void(0);" class="mtab-btn"><i class="fa fa-backward"></i></a>
+                <!--标签主体-->
+                <div class="mtab-body"><div class="mtab-main" id="mtab-main"></div></div>
+                <!--下拉菜单-->
+                <!--div class="pull-right" id="mtab-menu">
+                    <a href="javascript:void(0);" class="mtab-btn" title="刷新"><i class="fa fa-refresh"></i></a>
+                </div-->
+
+
+                <!--div class="pull-right btn-group dropdown" id="mtab-menu">
+                    <a class="mtab-btn" data-toggle="dropdown"><i class="fa fa-angle-double-down"></i></a>
+
+                    <ul class="dropdown-menu dropdown-menu-right" >
+                        <li><a class="tabShowActive">定位当前选项卡</a></li>
+                        <li class="divider"></li>
+                        <li><a class="tabCloseOther">关闭其它选项卡</a></li>
+                        <li><a class="tabCloseAll">关闭全部选项卡</a></li>
+                        <li class="divider"></li>
+                        <li><a class="tabReFresh">刷新当前页面</a></li>
+                    </ul>
+                </div-->
+
+
+
+                <div class="pull-right btn-group dropdown"> 
+                    <a class="mtab-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"><i class="fa fa-angle-double-down"></i></a> 
+
+
+
+
+
+                    <ul class="dropdown-menu dropdown-yellow" role="menu" aria-labelledby="dropdownMenu1"> 
+                        <li role="presentation"><a role="menuitem" class="tabShowActive">定位当前选项卡</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" class="tabCloseOther">关闭其它选项卡</a></li>
+                        <li role="presentation"><a role="menuitem" class="tabCloseAll">关闭全部选项卡</a></li>
+                        <li role="presentation" class="divider"></li> 
+                        <li role="presentation"> <a class="tabReFresh" role="menuitem">刷新当前页面</a> </li> 
+                    </ul> 
+                </div>
+
+
+
+                <!--右滑-->
+                <a href="javascript:void(0);" class="pull-right mtab-btn"><i class="fa fa-forward"></i></a>
+            </div>
+            <!--选项卡·内容-->
+            <div class="tab-content" id="mtabox"></div>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--框架首页初始化-->
+    <script src="js/tab.js"></script>
+
+    <script type="text/javascript">
+
+//打开页面 桌面（默认第一个，不能关闭，不然会影响：关闭其他、关闭全部）
+rf.OpenPage('/home/desk', '<i class="fa fa-home"></i> 桌面', false);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面1', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面2', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面3', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面4', true);
+
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面5', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面6', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面7', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面8', true);
+
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面9', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面10', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面11', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面12', true);
+
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面13', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面14', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面15', true);
+
+rf.OpenPage('/home/desk1', '<i class="fa fa-home"></i> 桌面16', true);
+    </script>
+
+</body>
+</html>

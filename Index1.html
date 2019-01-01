@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html style="overflow:hidden; padding:0;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>tabs</title>
+</head>
+
+<body class="no-skin">
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--首页样式-->
+    <link href="css/init.css" rel="stylesheet" />
+
+    <!--主-->
+    <div class="main-container" id="main-container">
+
+        <!--主体-->
+        <div class="main-content">
+            <!--选项卡·标签-->
+            <div class="hidden-xs mtab" id="mtab">
+                <!--左滑-->
+                <a href="javascript:void(0);" class="mtab-btn"><i class="fa fa-backward"></i></a>
+                <!--标签主体-->
+                <div class="mtab-body"><div class="mtab-main" id="mtab-main"></div></div>
+                <!--下拉菜单-->
+                <div class="pull-right" id="mtab-menu">
+                    <a href="javascript:void(0);" class="mtab-btn" title="刷新"><i class="fa fa-refresh"></i></a>
+
+                </div>
+                <!--右滑-->
+                <a href="javascript:void(0);" class="pull-right mtab-btn"><i class="fa fa-forward"></i></a>
+            </div>
+            <!--选项卡·内容-->
+            <div class="tab-content" id="mtabox"></div>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--框架首页初始化-->
+    <script src="js/init.js"></script>
+
+</body>
+</html>
