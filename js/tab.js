@@ -1,4 +1,4 @@
-﻿var rf = {
+var rf = {
     key: {
         navmin: "c_navmin",/*导航最小化*/
         navtype: "c_navtype",/*导航浮动*/
@@ -149,8 +149,8 @@ $('#mtab').click(function (e) {
                     rf.PositionTab();
                 }
 
-                if($('.dropdown').hasClass('open'))
-                    $('.dropdown-toggle').dropdown('toggle');
+                if($('.mtab .dropdown').hasClass('open'))
+                    $('.mtab .dropdown-toggle').dropdown('toggle');
                 return false;
             }
         }

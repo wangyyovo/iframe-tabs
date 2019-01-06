@@ -1,101 +1,105 @@
-﻿/*选项卡*/
+/*选项卡*/
 .mtab {
-    position: relative;
-    margin-top: 0px;
-    border-bottom: 1px solid #2C6AA0;
+position: relative;
+margin-top: 0px;
+border-bottom: 1px solid #d2d6de;
 }
 
-    .mtab .mtab-btn {
-        width: 38px;
-        height: 38px;
-        line-height: 38px;
-        text-align: center;
-        display: inline-block;
-    }
+.mtab div.dropdown {
+    margin-top: 2px;
+}
 
-        .mtab .mtab-btn:hover {
-            background-color: #f2f2f2;
-        }
+.mtab .mtab-btn {
+width: 38px;
+height: 38px;
+line-height: 38px;
+text-align: center;
+display: inline-block;
+}
 
-    .mtab .mtab-body, .mtab .mtab-main {
-        position: absolute;
-        top: 0;
-        left: 38px;
-        right: 78px;
-        height: 38px;
-        overflow: hidden;
-        white-space: nowrap;
-    }
+.mtab .mtab-btn:hover {
+background-color: #f2f2f2;
+}
 
-    .mtab .mtab-main {
-        left: 0;
-        right: 0;
-        -webkit-transition: left .5s;
-        -moz-transition: left .5s;
-        -o-transition: left .5s;
-        transition: left .5s;
-    }
+.mtab .mtab-body, .mtab .mtab-main {
+position: absolute;
+top: 0;
+left: 38px;
+right: 78px;
+height: 38px;
+overflow: hidden;
+white-space: nowrap;
+}
 
-        .mtab .mtab-main a {
-            color: #000;
-            margin: 0 3px 0 0;
-            white-space: nowrap;
-            display: inline-block;
-            text-decoration: none;
-            outline: none !important;
-            padding: 10px 12px 8px !important;
-            border-radius: 0px 0px 0 0 !important;
-        }
+.mtab .mtab-main {
+left: 0;
+right: 0;
+-webkit-transition: left .5s;
+-moz-transition: left .5s;
+-o-transition: left .5s;
+transition: left .5s;
+}
 
-            .mtab .mtab-main a.active {
-                color: #fff !important;
-                background-color: #438eb9;
-            }
+.mtab .mtab-main a {
+color: #000;
+margin: 0 3px 0 0;
+white-space: nowrap;
+display: inline-block;
+text-decoration: none;
+outline: none !important;
+padding: 10px 12px 8px !important;
+border-radius: 0px 0px 0 0 !important;
+}
 
-            .mtab .mtab-main a:hover {
-                color: #FFF !important;
-                background-color: #438eb9;
-            }
+.mtab .mtab-main a.active {
+color: #fff !important;
+background-color: #438eb9;
+}
 
-            .mtab .mtab-main a em:hover {
-                color: #ecbfbf;
-            }
+.mtab .mtab-main a:hover {
+color: #FFF !important;
+background-color: #438eb9;
+}
 
-        .mtab .mtab-main .fa-close {
-            font-size: 16px;
-            margin-left: 5px;
-        }
+.mtab .mtab-main a em:hover {
+color: #ecbfbf;
+}
 
-        .mtab-btn .fa-angle-double-down {
-        	font-size: 18px;
-        }
+.mtab .mtab-main .fa-close {
+font-size: 16px;
+margin-left: 5px;
+}
+
+.mtab-btn .fa-angle-double-down {
+font-size: 18px;
+}
 
 /* 选项卡·内容 */
 .tab-content {
-    padding: 0;
-    border: 1px solid transparent;
+padding: 0;
+border: 1px solid transparent;
 }
 
-    .tab-content .tab-pane {
-        position: relative;
-    }
+.tab-content .tab-pane {
+position: relative;
+}
 
-    .tab-content iframe {
-        position: absolute;
-        height: 100%;
-        border: none;
-        width: 100%;
-    }
+.tab-content iframe {
+position: absolute;
+height: 100%;
+border: none;
+width: 100%;
+}
 
 
 /*下拉菜单*/
 .dropdown-yellow > li > a {
-    cursor: pointer;
-    padding: 5px 15px;
+cursor: pointer;
+padding: 5px 15px;
 }
 
-    .dropdown-yellow > li > a:hover, .dropdown-yellow > li > a:focus, .dropdown-yellow > li > a:active, .dropdown-yellow > li.active > a, .dropdown-yellow > li.active > a:hover, .dropdown-yellow .dropdown-submenu:hover > a {
-        color: #444;
-        background: #438EB9;
-    }
+.dropdown-yellow > li > a:hover, .dropdown-yellow > li > a:focus, .dropdown-yellow > li > a:active, .dropdown-yellow > li.active > a, .dropdown-yellow > li.active > a:hover, .dropdown-yellow .dropdown-submenu:hover > a {
+color: #444;
+background: #438EB9;
+}
 
