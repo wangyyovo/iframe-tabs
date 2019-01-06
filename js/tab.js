@@ -1,12 +1,5 @@
 var rf = {
-    key: {
-        navmin: "c_navmin",/*导航最小化*/
-        navtype: "c_navtype",/*导航浮动*/
-        navskin: "c_navskin",/*导航皮肤*/
-        fontsize: "c_fontsize",/*字体大小*/
-        fontfamily: "c_fontfamily",/*字体*/
-        btntype: "c_btntype"/*按钮皮肤*/
-    },
+
     //localStorage
     ls: function (k, v) {
         if (arguments.length == 2) {
